@@ -1,0 +1,35 @@
+#Rooms
+room Garden
+room Garage
+room Basement
+room Kitchen
+room Living_room
+room Stairs
+room Hall
+room Attic
+room Bedroom_parents
+room Bedroom
+room Guest_room
+room Bathroom
+#Doors
+door Main1-Main2 sealed Garden Living_Room 
+door W-E keycode Garden Garage
+door W-E locked Garage Basement
+door S-N unlocked Basement Kitchen
+door W-E unlocked Kitchen Living_room
+door N-S open Living_room Hall
+door W-E open Hall Attic
+door N1-S unlocked Hall Parent's_bedroom
+door N2-S unlocked Hall Bathroom
+door E-W unlocked Hall Bedroom
+#Items
+item car Garage STATIONARY
+item pot Garage USE search
+item ladder Garage MOVE
+item toolbox Garage USE search
+item key Garage USE take
+item shoes Basement USE take_release
+item glass Kitchen USE drink_hear_take_release
+item trunk Attic STATIONARY enter_exit
+#Start position
+start Garden
